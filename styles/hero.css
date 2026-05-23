@@ -1,12 +1,24 @@
 .hero {
   display: flex;
 
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 40px;
+}
+
+.hero__content {
+  max-width: 793px;
+
+  flex: 1;
+
+  display: flex;
+
   flex-direction: column;
 }
 
 .hero__title {
-  max-width: 793px;
-
   margin: 0;
 
   font-family: "Archivo Black", Arial, sans-serif;
@@ -17,13 +29,102 @@
 }
 
 .hero__description {
-  max-width: 720px;
-
   margin: 24px 0 0;
 
   font-size: 18px;
 
-  line-height: 18px;
+  line-height: 1.4;
 
   font-weight: 400;
+}
+
+.hero__text {
+  margin: 24px 0 0;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+.hero__buttons {
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 40px;
+
+  flex-wrap: wrap;
+}
+
+.hero__button {
+  padding: 16px 32px;
+
+  border: 1px solid #fff;
+
+  border-radius: 8px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  transition: opacity 0.3s ease;
+}
+
+.hero__button {
+  padding: 16px 32px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 12px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero__button:hover {
+  transform: translateY(-4px);
+
+  background-color: rgba(140, 82, 255, 0.2);
+
+  box-shadow: 0 0 20px rgba(140, 82, 255, 0.4);
+}
+
+.hero__button_type_contact {
+  background-color: #fff;
+
+  color: #000;
+}
+
+.hero__image-container {
+  flex-shrink: 0;
+}
+
+.hero__image {
+  width: 387px;
+
+  height: 500px;
+
+  object-fit: cover;
+
+  display: block;
 }

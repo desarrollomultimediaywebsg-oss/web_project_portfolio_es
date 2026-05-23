@@ -39,7 +39,20 @@
 }
 
 .page {
-  background-color: #000;
+  background-color: #080312;
+
+  background-image:
+    radial-gradient(
+      circle at calc(50% - 500px) 200px,
+      rgba(140, 82, 255, 0.35),
+      transparent 400px
+    ),
+    radial-gradient(
+      circle at calc(50% + 500px) 300px,
+      rgba(190, 120, 255, 0.25),
+      transparent 450px
+    );
+
   color: #fff;
 
   font-family: "Open Sans", Arial, sans-serif;
@@ -47,4 +60,6 @@
   margin: 0 auto;
 
   min-width: 320px;
+
+  overflow-x: hidden;
 }
