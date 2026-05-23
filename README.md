@@ -37,7 +37,7 @@ El sitio incluye:
 
 ## Enlace del proyecto en GitHub Pages
 
-[Ver proyecto](https://desarrollomultimediaywebsg-oss.github.io/)
+[Ver proyecto](https://desarrollomultimediaywebsg-oss.github.io/web_project_portfolio_es/)
 
 ---
 
